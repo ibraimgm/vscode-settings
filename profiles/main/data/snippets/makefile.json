@@ -1,0 +1,65 @@
+{
+	// Place your snippets for makefile here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"golangone": {
+		"prefix": "golangone",
+		"body": [
+			"GO=go",
+			"GOBUILD=$(GO) build",
+			"GOINSTALL=$(GO) install",
+			"GOTEST=$(GO) test",
+			"GO_BINDATA=go-bindata",
+			"FLAGS=",
+			"LDFLAGS=-w -s",
+			"",
+			"CMDNAME=${1:command}",
+			"SOURCES=$(shell find . -type f -name \"*.go\") go.mod",
+			"",
+			"TOOLS_MARKER=.tools_ok",
+			"TOOLS_SOURCE=go.mod tools.go",
+			"",
+			"ASSET_PKGNAME=assets",
+			"ASSET_DIR=assets",
+			"ASSET_SOURCES=$(shell find $(ASSET_DIR))",
+			"ASSET_GO_DIR=internal/assets",
+			"ASSET_GO=$(ASSET_GO_DIR)/assets.go",
+			"",
+			"",
+			"all: build",
+			"",
+			"build: $(CMDNAME)",
+			"",
+			"$(CMDNAME): $(SOURCES) $(ASSET_GO)",
+			"\t$(GOBUILD) -o $@ $(FLAGS) -ldflags '$(LDFLAGS)' ./cmd/$(CMDNAME)",
+			"",
+			"$(ASSET_GO): $(TOOLS_MARKER) $(ASSET_SOURCES)",
+			"\tmkdir -p $(ASSET_GO_DIR)",
+			"\t$(GO_BINDATA) -fs -pkg $(ASSET_PKGNAME) -prefix $(ASSET_DIR)/ -o $@ $(ASSET_DIR)",
+			"",
+			"check:",
+			"\t$(GOTEST) -coverprofile coverage.out `go list | grep -v 'internal'`",
+			"",
+			"tools: $(TOOLS_MARKER)",
+			"",
+			"$(TOOLS_MARKER): $(TOOLS_SOURCE)",
+			"\t$(GOINSTALL) github.com/go-bindata/go-bindata/...",
+			"\ttouch $@",
+			"",
+			"clean:",
+			"\trm -f $(CMDNAME) $(ASSET_GO) $(TOOLS_MARKER)",
+			"",
+			".PHONY: all build tools clean",
+		]
+	}
+}

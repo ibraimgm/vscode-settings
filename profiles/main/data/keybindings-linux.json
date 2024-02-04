@@ -1,0 +1,90 @@
+// Empty
+[
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key":"ctrl+shift+t",
+    "command":"shellLauncher.launch"
+  },
+  { "key": "ctrl+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  { "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  { "key": "ctrl+alt+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  { "key": "ctrl+alt+p",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "python.execSelectionInTerminal",
+    "when": "editorFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "macros.snippetWithDescription"
+},
+{
+  "key": "ctrl+k",
+  "command": "workbench.action.terminal.clear",
+  "when": "terminalFocus"
+},
+{
+  "key": "ctrl+shift+u",
+  "command": "workbench.action.output.toggleOutput",
+  "when": "!editorTextFocus && terminalFocus"
+},
+{
+  "key": "ctrl+shift+u",
+  "command": "-workbench.action.output.toggleOutput"
+},
+{
+  "key": "ctrl+shift+u",
+  "command": "editor.action.transformToUppercase",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+alt+[Minus]",
+  "command": "workbench.action.navigateBack",
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+shift+-",
+  "command": "workbench.action.navigateForward",
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+shift+-",
+  "command": "-workbench.action.navigateForward"
+},
+{
+  "key": "ctrl+k s",
+  "command": "workbench.action.files.saveAll"
+},
+{
+  "key": "ctrl+k s",
+  "command": "-workbench.action.files.saveWithoutFormatting"
+},
+{
+  "key": "ctrl+shift+5",
+  "command": "-coverage-gutters.toggleCoverage"
+}
+]

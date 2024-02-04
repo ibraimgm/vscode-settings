@@ -1,0 +1,324 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
+    "editor.tabSize": 2,
+		"editor.insertSpaces": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "git.path": "C:\\Git\\bin\\git.exe",
+    "editor.detectIndentation": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+    },
+    "files.associations": {
+      "*.js": "javascript",
+      "*.jsx": "javascriptreact",
+      ".prettierrc": "json"
+    },
+    "sync.gist": "f503c5fb1d08a0d25ec900e9536ca6e7",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "telemetry.enableTelemetry": false,
+    // "vim.useSystemClipboard": true,
+    // "vim.handleKeys": {
+    //   "<C-k>": false,
+    //   "<C-f>": false
+    // },
+    // "vim.statusBarColorControl": true,
+    // "vim.statusBarColors": {
+    //   "normal": [
+    //     "#98c379",
+    //     "#282c34"
+    //   ],
+    //   "insert": ["#61AFEF",
+    //     "#282c34"],
+    //   "visual": ["#B48EAD",
+    //     "#282c34"],
+    //   "visualline": ["#c678dd",
+    //     "#282c34"],
+    //   "visualblock": ["#c678dd",
+    //     "#282c34"],
+    //   "replace": ["#e06c75",
+    //     "#282c34"]
+    // },
+    //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    // "terminal.integrated.shell.windows": "C:\\Git\\bin\\bash.exe",
+    // "terminal.integrated.shellArgs.windows": ["--login"],
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font Mono",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.startupEditor": "none",
+    "[makefile]": {
+      "editor.insertSpaces": false,
+      "editor.tabSize": 4,
+      "editor.detectIndentation": false,
+  },
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  // note: compilation errors on test code aren't being picked up by clippy
+  "rust-analyzer.checkOnSave.command": "clippy",
+  // "rust-analyzer.checkOnSave.extraArgs": ["--no-deps"],
+  "go.inferGopath": true,
+  "go.lintOnSave": "workspace",
+  "go.vetOnSave": "workspace",
+  "go.testOnSave": true,
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
+  "[go]": {
+    "editor.snippetSuggestions": "none",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "gopls":{
+    "completionDocumentation": true
+  },
+  "eslint.lintTask.enable": true,
+  "shellLauncher.shells.windows": [
+    {
+      "shell": "C:\\Windows\\System32\\cmd.exe",
+      "label": "cmd"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "label": "PowerShell"
+    },
+    {
+      "shell": "C:\\Git\\bin\\bash.exe",
+      "args": ["--login"],
+      "label": "Git bash"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\bash.exe",
+      "label": "WSL Bash"
+    },
+    {
+      "shell": "C:\\Windows\\System32\\cmd.exe",
+      "args": ["/K", "C:\\Users\\ribraim\\Miniconda3\\Scripts\\activate.bat", "C:\\Users\\ribraim\\Miniconda3"],
+      "label": "Miniconda Shell"
+    }
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "html.format.wrapAttributes": "auto",
+  "python.linting.pylintEnabled": true,
+  "python.linting.pep8Enabled": true,
+  "workbench.settings.editor": "json",
+  "python.venvPath": "C:\\Users\\ribraim\\Miniconda3\\envs",
+  "window.restoreWindows": "none",
+  "extensions.autoUpdate": false,
+  "licenser.author": "Rafael Ibraim",
+  "licenser.license": "choose",
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "numberedBookmarks.keepBookmarksOnDelete": true,
+  "eslint.enable": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "macros": {
+    "snippetWithDescription": [
+        "editor.action.clipboardCopyAction",
+        "editor.action.insertLineAfter",
+        //"editor.action.clipboardPasteAction",
+        //"cursorHomeSelect",
+        {
+            "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "console.log(`${CLIPBOARD}: `, ${CLIPBOARD});$0"
+                }
+        }
+    ]
+},
+"gitlens.defaultDateShortFormat": "DD-MM-YYYY",
+"gitlens.defaultDateFormat": "DD-MM-YYYY h:mma",
+"git.ignoredRepositories": ["/home/ribraim/dev/dotfiles"],
+"[json]": {
+  "editor.defaultFormatter": "vscode.json-language-features"
+},
+  /*,
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#98c379",
+      "statusBar.noFolderBackground": "#98c379",
+      "statusBar.debuggingBackground": "#98c379",
+      "statusBar.foreground": "#282c34"
+    }
+    */
+    // "terminal.integrated.shell.linux": "/bin/zsh",
+    // "terminal.integrated.shellArgs.linux": ["-i"],
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "icon": "terminal-bash"
+      },
+      "zsh": {
+        "path": "zsh",
+        "args": ["-i"]
+      },
+      "fish": {
+        "path": "fish"
+      },
+      "tmux": {
+        "path": "tmux",
+        "icon": "terminal-tmux"
+      },
+      "pwsh": {
+        "path": "pwsh",
+        "icon": "terminal-powershell"
+      }
+    },
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.inheritEnv": true,
+    "sync.forceUpload": true,
+    "explorer.openEditors.visible": 0,
+    "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+    // "todo-tree.ripgrep": "rg",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.general.tags": [
+      "TODO",
+      "todo!",
+      "FIXME",
+      "BUG",
+      "VERIFY",
+      "[ ]",
+      "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+      "TODO": {
+        "icon": "issue-opened",
+        "type": "text",
+        "iconColour": "orange",
+        "background": "#ffa500",
+        "foreground": "white"
+      },
+      "todo!": {
+        "icon": "issue-opened",
+        "type": "text",
+        "iconColour": "orange",
+        "background": "#ffa500",
+        "foreground": "white"
+      },
+      "FIXME": {
+        "icon": "flame",
+        "type": "text",
+        "iconColour": "#FA2c2c",
+        "background": "#FA2c2c",
+        "foreground": "white"
+      },
+      "BUG": {
+        "icon": "bug",
+        "type": "text",
+        "iconColour": "orangered",
+        "background": "#ff4500",
+        "foreground": "white"
+      },
+      "VERIFY": {
+        "icon": "question",
+        "type": "text",
+        "iconColour": "orchid",
+        "background": "#da70d6",
+        "foreground": "white"
+      }
+    },
+    "material-icon-theme.folders.associations": {
+      "store":"Database",
+      "internal": "Private"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "todo-tree.tree.showScanModeButton": false,
+    "typescript.tsserver.log": "off",
+    "yaml.schemas": {
+      "Kubernetes": ["*-depl.yaml", "*-srv.yaml", "*-svc.yaml"]
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "coverage-gutters.coverageFileNames": [
+      "lcov.info",
+      "cov.xml",
+      "coverage.xml",
+      "jacoco.xml"
+    ],
+    "coverage-gutters.showGutterCoverage": false,
+    "coverage-gutters.showLineCoverage": true,
+    "bracket-pair-colorizer-2.colors": [
+      "#e6b422",
+      "Orchid", // "#c70067",
+      "LightSkyBlue",
+      "#00a960",
+      // "#fc7482",
+      "#33ccff",
+      "#8080ff",
+      "#0073a8",
+      "#d4d4aa",
+      "#d1a075",
+      "#9c6628"
+      // original colors from rainbowBrackets
+      // bracket-pair currently don't support different colors for different types,
+      // so I put them all together, in order
+      // var roundBracketsColor = ["#e6b422", "#c70067", "#00a960", "#fc7482"];^M
+      // var squareBracketsColor = ["#33ccff", "#8080ff", "#0073a8"];^M
+      // var squigglyBracketsColor = ["#d4d4aa", "#d1a075", "#9c6628"];^M
+    ],
+    "bracket-pair-colorizer-2.colorMode": "Independent",
+    "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+      "borderStyle : solid",
+      "borderWidth : 1px",
+      "borderColor : {color}",
+      "opacity: 0.5"
+    ],
+    "rainbow_csv.comment_prefix": "#",
+    "files.autoSave": "off",
+    "redhat.telemetry.enabled": false,
+    "markdown-pdf.executablePath": "/usr/bin/chromium",
+    "clangd.path": "/home/ribraim/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/14.0.3/clangd_14.0.3/bin/clangd",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",  // So you don't get autocomplete from both extensions.
+    "C_Cpp.errorSquiggles": "Disabled",
+    "[c]": {
+      "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+      "editor.formatOnSave": true
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "git.mergeEditor": true,
+    "terminal.integrated.customGlyphs": false, // So you don't get error squiggles from both extensions (clangd's seem to be more reliable anyway).
+}
