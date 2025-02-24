@@ -49,11 +49,6 @@
 },
 {
   "key": "ctrl+shift+u",
-  "command": "workbench.action.output.toggleOutput",
-  "when": "!editorTextFocus && terminalFocus"
-},
-{
-  "key": "ctrl+shift+u",
   "command": "-workbench.action.output.toggleOutput"
 },
 {
@@ -86,5 +81,10 @@
 {
   "key": "ctrl+shift+5",
   "command": "-coverage-gutters.toggleCoverage"
+},
+{
+  "key": "ctrl+shift+u",
+  "command": "-rust-analyzer.parentModule",
+  "when": "editorTextFocus && editorLangId == 'rust'"
 }
 ]

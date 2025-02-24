@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "window.titleBarStyle": "custom",
     "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     "editor.tabSize": 2,
 		"editor.insertSpaces": true,
@@ -167,7 +168,7 @@
 },
 "gitlens.defaultDateShortFormat": "DD-MM-YYYY",
 "gitlens.defaultDateFormat": "DD-MM-YYYY h:mma",
-"git.ignoredRepositories": ["/home/ribraim/dev/dotfiles"],
+// "git.ignoredRepositories": ["/home/ribraim/dev/dotfiles"],
 "[json]": {
   "editor.defaultFormatter": "vscode.json-language-features"
 },
@@ -269,7 +270,6 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.formatOnSave": true
     },
-    "diffEditor.ignoreTrimWhitespace": false,
     "coverage-gutters.coverageFileNames": [
       "lcov.info",
       "cov.xml",
@@ -320,5 +320,30 @@
     },
     "gitlens.hovers.currentLine.over": "line",
     "git.mergeEditor": true,
-    "terminal.integrated.customGlyphs": false, // So you don't get error squiggles from both extensions (clangd's seem to be more reliable anyway).
+    "terminal.integrated.customGlyphs": false,
+    "workbench.colorCustomizations": {
+      "editorStickyScroll.background": "#181a1f",
+      "editorStickyScrollHover.background": "#272930"
+    },
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "[mdx]": {
+      "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    },
+    "explorer.fileNesting.patterns": {
+      "Cargo.toml": "Cargo.lock",
+      "*.sqlite": "${capture}.${extname}-*",
+      "*.db": "${capture}.${extname}-*",
+      "*.sqlite3": "${capture}.${extname}-*",
+      "*.db3": "${capture}.${extname}-*",
+      "*.sdb": "${capture}.${extname}-*",
+      "*.s3db": "${capture}.${extname}-*"
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    }
 }

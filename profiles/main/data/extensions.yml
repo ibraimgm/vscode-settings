@@ -1,6 +1,12 @@
 disabled:
-  - id: Shan.code-settings-sync
-    uuid: e337c67b-55c2-4fef-8949-eb260e7fb7fd
+  - id: ms-python.debugpy
+    uuid: 4bd5d2c9-9d65-401a-b0b2-7498d9f17615
+  - id: ms-python.isort
+    uuid: 4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff
+  - id: ms-python.python
+    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+  - id: ms-python.vscode-pylance
+    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
 enabled:
   - id: 2gua.rainbow-brackets
     uuid: 797a79de-a0fd-4349-9034-bec47be9a941
@@ -44,8 +50,6 @@ enabled:
     uuid: ee7bc8d7-b65f-4174-8ee2-88c7848d5099
   - id: ionutvmi.path-autocomplete
     uuid: 0d1241e3-fa60-4f24-8f2a-6d7085677c48
-  - id: joaompinto.vscode-graphviz
-    uuid: 9503bc2d-f581-462c-86fd-1dddf4857e66
   - id: joselitofilho.ginkgotestexplorer
     uuid: c6679923-95db-4531-bdae-3dd00806b25b
   - id: llvm-vs-code-extensions.vscode-clangd
@@ -58,14 +62,6 @@ enabled:
     uuid: 3792588c-3d35-442d-91ea-fe6a755e8155
   - id: mikestead.dotenv
     uuid: 532533c9-a894-4a58-9eee-bbfbe7c06f71
-  - id: ms-python.debugpy
-    uuid: 4bd5d2c9-9d65-401a-b0b2-7498d9f17615
-  - id: ms-python.isort
-    uuid: 4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff
-  - id: ms-python.python
-    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
-  - id: ms-python.vscode-pylance
-    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
   - id: ms-toolsai.jupyter
     uuid: 6c2f1801-1e7f-45b2-9b5c-7782f1e076e8
   - id: ms-toolsai.jupyter-keymap
@@ -98,12 +94,16 @@ enabled:
     uuid: 5db78037-f674-459f-a236-db622c427c5b
   - id: premparihar.gotestexplorer
     uuid: 35ab00b9-99c0-4bc3-8bf4-44632dbfdb2a
+  - id: qwtel.sqlite-viewer
+    uuid: 94fef082-6c2d-43ac-9540-6617b51a3a12
   - id: rangav.vscode-thunder-client
     uuid: 2fd56207-78ef-49d4-95d2-9b801eee4dbf
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: ritwickdey.LiveServer
     uuid: b63c44fd-0457-4696-99e9-dbfdf70d77de
+  - id: RomanPeshkov.vscode-text-tables
+    uuid: cd1641f1-7e33-48db-8271-592dfcb15fc5
   - id: rust-lang.rust-analyzer
     uuid: 06574cb4-e5dc-4631-8174-a543a4533621
   - id: ryanluker.vscode-coverage-gutters
