@@ -206,7 +206,7 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.inheritEnv": true,
     "sync.forceUpload": true,
-    "explorer.openEditors.visible": 0,
+    "explorer.openEditors.visible": 1,
     "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
     // "todo-tree.ripgrep": "rg",
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
@@ -321,10 +321,84 @@
     "gitlens.hovers.currentLine.over": "line",
     "git.mergeEditor": true,
     "terminal.integrated.customGlyphs": false,
+    "rainbowBrackets.roundBracketsColor": [
+      "#e6b422",
+      "#c70067",
+      "#00a960",
+      "#fc7482"
+    ],
+    "rainbowBrackets.squareBracketsColor": [
+      "#33ccff",
+      "#8080ff",
+      "#0073a8"
+    ],
+    "rainbowBrackets.squigglyBracketsColor": [
+      "#d4d4aa",
+      "#d1a075",
+      "#9c6628"
+    ],
+    // "rainbowBrackets.squigglyBracketsColor": [
+    //   "#484c61",
+    //   "#d1a075",
+    //   "#9c6628"
+    // ],
+    // built-in bracket highlights
+    // kinda suck, actually
     "workbench.colorCustomizations": {
+      "editorBracketHighlight.foreground1" :"#d4d4aa",
+      "editorBracketHighlight.foreground2" :"#e6b422",
+      "editorBracketHighlight.foreground3" :"#c70067",
+      "editorBracketHighlight.foreground4" :"#00a860",
+      "editorBracketHighlight.foreground5" :"#ec6e7c",
+      "editorBracketHighlight.foreground6" :"#e75423",
       "editorStickyScroll.background": "#181a1f",
       "editorStickyScrollHover.background": "#272930"
     },
+    // "workbench.colorCustomizations": {
+    //   "editorBracketHighlight.foreground1" :"#e6b422",
+    //   "editorBracketHighlight.foreground2" :"#c70067",
+    //   "editorBracketHighlight.foreground3" :"#00a860",
+    //   "editorBracketHighlight.foreground4" :"#ec6e7c",
+    //   "editorBracketHighlight.foreground5" :"#e75423",
+    //   "editorBracketHighlight.foreground6" :"#d16668",
+    //   "editorStickyScroll.background": "#181a1f",
+    //   "editorStickyScrollHover.background": "#272930"
+    // },
+
+    "RainbowBrackets.colorMode": "Independent",
+    "RainbowBrackets.independentPairColors": [
+      [
+        "()",
+        [
+          "#e6b422",
+          "#c70067",
+          "#00a960",
+          "#fc7482"
+        ],
+        "Revioletd"
+      ],
+      [
+        "[]",
+        [
+          "#33ccff",
+          "#8080ff",
+          "#0073a8"
+        ],
+        "Revioletd"
+      ],
+      [
+        "{}",
+        [
+          "#d4d4aa",
+          "#d1a075",
+          "#9c6628"
+        ],
+        "Revioletd"
+      ]
+    ],
+    "RainbowBrackets.showHorizontalScopeLine": false,
+    "RainbowBrackets.depreciation-notice": false,
+
     "rust-analyzer.checkOnSave": true,
     "rust-analyzer.check.command": "clippy",
     "[mdx]": {
@@ -344,6 +418,7 @@
       "*": false,
       "plaintext": false,
       "markdown": false,
-      "scminput": false
+      "scminput": false,
+      "rust": true
     }
 }

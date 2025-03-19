@@ -86,5 +86,24 @@
   "key": "ctrl+shift+u",
   "command": "-rust-analyzer.parentModule",
   "when": "editorTextFocus && editorLangId == 'rust'"
+},
+{
+  "key": "ctrl+alt+right",
+  "command": "-workbench.action.moveEditorToNextGroup"
+},
+{
+  "key": "ctrl+alt+right",
+  "command": "-quickInput.acceptInBackground",
+  "when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+},
+{
+  "key": "ctrl+alt+right",
+  "command": "editor.action.jumpToBracket",
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+shift+\\",
+  "command": "-editor.action.jumpToBracket",
+  "when": "editorTextFocus"
 }
 ]

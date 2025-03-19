@@ -1,23 +1,21 @@
 disabled:
   - id: ms-python.debugpy
-    uuid: 4bd5d2c9-9d65-401a-b0b2-7498d9f17615
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: ms-python.isort
-    uuid: 4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: ms-python.python
-    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: ms-python.vscode-pylance
-    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: slevesque.vscode-hexdump
+    uuid: 00000000-0000-0000-0000-000000000000
 enabled:
-  - id: 2gua.rainbow-brackets
-    uuid: 797a79de-a0fd-4349-9034-bec47be9a941
   - id: alefragnani.numbered-bookmarks
     uuid: f0173dd6-501a-46b6-9840-c7849f6f9ee2
   - id: bokuweb.vscode-ripgrep
     uuid: e42eda75-a395-41fc-84a9-0a698f754451
   - id: bpruitt-goddard.mermaid-markdown-syntax-highlighting
     uuid: 08792992-bb56-41fb-b5dd-8551bbee0cb6
-  - id: bungcip.better-toml
-    uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
   - id: david-rickard.git-diff-and-merge-tool
     uuid: ed6b358a-4167-4eb8-a07c-ec72cbdbc503
   - id: DavidAnson.vscode-markdownlint
@@ -28,16 +26,20 @@ enabled:
     uuid: 0808d236-6faf-4f68-9f17-28f51a572ee4
   - id: dlipovetsky.ginkgo-tools
     uuid: db38520c-c985-4b78-958e-0f17157a8bf2
-  - id: dzannotti.vscode-babel-coloring
-    uuid: d7b592dd-41c9-4f2b-acf3-055ae65e55c6
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: EditorConfig.EditorConfig
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: fill-labs.dependi
+    uuid: 456278dd-7f50-4cbe-8314-ab06540c1057
   - id: geddski.macros
     uuid: ee577500-fad7-4a2b-b19a-bf7ef89f766c
+  - id: GitHub.copilot
+    uuid: 23c4aeee-f844-43cd-b53e-1113e483f1a6
+  - id: GitHub.copilot-chat
+    uuid: 7ec7d6e6-b89e-4cc5-a59b-d6c4d238246f
   - id: golang.go
     uuid: d6f6cfea-4b6f-41f4-b571-6ad2ab7918da
   - id: Gruntfuggly.todo-tree
@@ -78,6 +80,8 @@ enabled:
     uuid: cc7d2112-5178-4472-8e0e-25dced95e7f0
   - id: ms-vscode.live-server
     uuid: 4eae7368-ec63-429d-8449-57a7df5e2117
+  - id: ms-vscode.makefile-tools
+    uuid: e09cf600-90a1-414e-92a0-031f1a5391c6
   - id: ms-vscode.test-adapter-converter
     uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
   - id: oderwat.indent-rainbow
@@ -101,25 +105,23 @@ enabled:
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: ritwickdey.LiveServer
-    uuid: b63c44fd-0457-4696-99e9-dbfdf70d77de
+    uuid: 46cc5bbd-b098-4568-9b87-f91e07d26f2d
   - id: RomanPeshkov.vscode-text-tables
     uuid: cd1641f1-7e33-48db-8271-592dfcb15fc5
   - id: rust-lang.rust-analyzer
     uuid: 06574cb4-e5dc-4631-8174-a543a4533621
   - id: ryanluker.vscode-coverage-gutters
     uuid: 188277b8-e4bc-4c10-92fa-d6959b4243ea
-  - id: serayuzgur.crates
-    uuid: 6a95a3fd-3a5d-4326-b8ab-1b1653b1f183
-  - id: slevesque.vscode-hexdump
-    uuid: 95dcafc3-2012-45bf-aac1-0b5345e0daf1
   - id: soren.go-coverage-viewer
     uuid: b663f8dd-239c-493a-ad25-99c39f8f3aa0
   - id: Swellaby.vscode-rust-test-adapter
     uuid: c167848c-fc11-496e-b432-1fd0a578a408
-  - id: TomiTurtiainen.rf-intellisense
-    uuid: 6195417d-6936-44ec-ad8e-f3e80e2b5c3a
+  - id: tal7aouy.rainbow-bracket
+    uuid: 90cf5b00-d411-42a6-a3fb-9c367e93e251
+  - id: tamasfe.even-better-toml
+    uuid: b2215d5f-675e-4a2b-b6ac-1ca737518b78
   - id: tomoki1207.pdf
-    uuid: 4386e6f6-ec10-4463-9d23-c24278718947
+    uuid: 6db08635-0c6a-45ba-9a4b-8c3e192c63c2
   - id: tomoyukim.vscode-mermaid-editor
     uuid: c7188ad2-f5c4-46c3-be65-5e264d565bdf
   - id: Tyriar.shell-launcher
