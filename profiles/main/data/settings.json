@@ -133,6 +133,17 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 4
   },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
   "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
   "html.format.wrapAttributes": "auto",
   "python.linting.pylintEnabled": true,
@@ -402,7 +413,8 @@
     "rust-analyzer.checkOnSave": true,
     "rust-analyzer.check.command": "clippy",
     "[mdx]": {
-      "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+      "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+      "editor.wordWrap": "on",
     },
     "explorer.fileNesting.patterns": {
       "Cargo.toml": "Cargo.lock",
@@ -420,5 +432,8 @@
       "markdown": false,
       "scminput": false,
       "rust": true
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
